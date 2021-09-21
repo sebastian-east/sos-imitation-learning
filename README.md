@@ -2,7 +2,7 @@
 
 This repository contains the code from the numerical experiments presented in [Imitation Learning of Stabilizing Policies for Nonlinear Systems](https://arxiv.org/pdf/2001.02244.pdf) (currently under review).
 
-The contents of this repository are freely available under the [MIT License](https://arxiv.org/pdf/2001.02244.pdf).
+The contents of this repository are freely available under the [MIT License](https://choosealicense.com/licenses/mit/).
 
 If this repository, or the above paper, are useful towards you work, I would greatly appreciate it if you include the citation
 
