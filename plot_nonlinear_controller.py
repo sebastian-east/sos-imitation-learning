@@ -28,6 +28,7 @@ if __name__ == "__main__":
     blue = Colors.blue
 
     files = os.listdir('./data/results')
+    files.remove('README.md')
     for file in files:
 
         data = np.load('./data/results/' + file)
