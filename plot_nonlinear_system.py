@@ -5,6 +5,7 @@ import os
 import seaborn
 import sympy as sp
 from sympy import expand
+import random
 
 from config.systems import NonlinearSystem
 
@@ -18,7 +19,7 @@ if __name__ == "__main__":
 
     # Create plot of imitation loss during training
 
-    fig, ax = plt.subplots(2, 1, figsize=[3.2, 4])
+    fig, ax = plt.subplots(2, 1, figsize=[3.2, 3.52]) #3.2, 4
 
     class Colors:
         blue = (0, 160/255, 255/255)
@@ -32,9 +33,11 @@ if __name__ == "__main__":
     blue = Colors.blue
 
     files = os.listdir('./data/results')
+    random.seed(0)
+    random.shuffle(files)
     for file in files:
 
-        data = np.load('./data/results/' + file)
+        data = np.load('./data/results/' + file, allow_pickle=True)
         _, system, algorithm, seed, N = file[:-4].split('_')
 
         if system == 'system':
