@@ -1,17 +1,19 @@
 # sos-imitation-learning
 
-This repository contains the code from the numerical experiments presented in [Imitation Learning of Stabilizing Policies for Nonlinear Systems](https://arxiv.org/pdf/2001.02244.pdf) (currently under review).
+This repository contains the code from the numerical experiments presented in [Imitation Learning of Stabilizing Policies for Nonlinear Systems](https://arxiv.org/abs/2109.10854) (currently under review).
 
-The contents of this repository are freely available under the [MIT License](https://arxiv.org/pdf/2001.02244.pdf).
+The contents of this repository are freely available under the [MIT License](https://choosealicense.com/licenses/mit/).
 
 If this repository, or the above paper, are useful towards you work, I would greatly appreciate it if you include the citation
 
 ```
-@ARTICLE{East2021,
-       author = {{East}, Sebastian,
-        title = "{Imitation Learning of Stabilizing Policies for Nonlinear Systems}",
-      journal = {arXiv e-prints},
- primaryClass = {math.OC},
+@misc{east2021imitation,
+      title={Imitation Learning of Stabilizing Policies for Nonlinear Systems}, 
+      author={Sebastian East},
+      year={2021},
+      eprint={2109.10854},
+      archivePrefix={arXiv},
+      primaryClass={math.OC}
 }
 ```
 

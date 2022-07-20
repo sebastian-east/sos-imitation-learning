@@ -31,6 +31,7 @@ if __name__ == "__main__":
     files = os.listdir('./data/results')
     random.seed(2)
     random.shuffle(files)
+
     for file in files:
 
         data = np.load('./data/results/' + file)
