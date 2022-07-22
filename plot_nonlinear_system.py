@@ -15,6 +15,7 @@ if __name__ == "__main__":
     seaborn.set_style("ticks")
     seaborn.set_context("paper")
     rc('text', usetex=True)
+    rc('pgf', texsystem="pdflatex")
     rc('font', **{'family':'serif', 'serif':['Times New Roman]']})
 
     # Create plot of imitation loss during training
@@ -32,7 +33,7 @@ if __name__ == "__main__":
     red = Colors.red
     blue = Colors.blue
 
-    files = os.listdir('./data/results')
+    files = [file for file in os.listdir('./data/results') if file.endswith('.npz')]
     random.seed(0)
     random.shuffle(files)
 

@@ -11,6 +11,7 @@ if __name__ == "__main__":
     seaborn.set_style("ticks")
     seaborn.set_context("paper")
     rc('text', usetex=True)
+    rc('pgf', texsystem="pdflatex")
     rc('font', **{'family':'serif', 'serif':['Times New Roman]']})
 
     # Training plot
@@ -28,13 +29,13 @@ if __name__ == "__main__":
     red = Colors.red
     blue = Colors.blue
 
-    files = os.listdir('./data/results')
+    files = [file for file in os.listdir('./data/results') if file.endswith('.npz')]
     random.seed(2)
     random.shuffle(files)
 
     for file in files:
 
-        data = np.load('./data/results/' + file)
+        data = np.load('./data/results/' + file, allow_pickle=True)
         _, system, algorithm, seed, N = file[:-4].split('_')
 
         if system == 'controller':
