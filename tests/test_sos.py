@@ -2,7 +2,7 @@ import sympy as sp
 from sympy import S
 import numpy as np
 import pytest
-from ..sos.sos import n_monomials, monomial_generator, zero_rows_B, \
+from sos.sos import n_monomials, monomial_generator, zero_rows_B, \
                           extract_monomials, extract_monoms_and_coeffs, \
                           einsum1, einsum2, MatrixVar
 
