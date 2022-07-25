@@ -1,6 +1,6 @@
 # sos-imitation-learning
 
-This repository contains the code from the numerical experiments presented in [Imitation Learning of Stabilizing Policies for Nonlinear Systems](https://www.sciencedirect.com/science/article/pii/S094735802200070X).
+This repository contains the code from the numerical experiments presented in [Imitation Learning of Stabilizing Policies for Nonlinear Systems](https://www.sciencedirect.com/science/article/pii/S094735802200070X) and at the 2022 European Control Conference.
 
 The contents of this repository are freely available under the [MIT License](https://choosealicense.com/licenses/mit/).
 
