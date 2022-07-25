@@ -75,7 +75,7 @@ The package in `./sos` can be used for both imitation learning and SOS analysis 
 
 ## Running the Experiments
 
-In Linux, the experiments can be run end-to-end with the command
+In Linux, the experiments from the paper can be run end-to-end with the command
 ```
 bash run.sh
 ```
