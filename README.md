@@ -59,10 +59,9 @@ A suitable environment can similarly be made in other operating systems with mod
 
 The code is *extremely* brittle with respect to the solver used to solve the SOS optimizaiton problems. The code in its present version works well with SCS version 2.1.4, but does not work at all with more recent versions, or the versions of Mosek I have tried. Parsing and solving SOS optimization problems can be numerically challenging, and (to the best of my knowledge) there is no mature open-source SOS framework in Python that can solve this issue. The code has all been tested and works well using the included `environment.yml` file.
 
-
 ## Doc creation
 
-In Linux, documentation for the contents of 'sos.py' can be created with `pydoc` using
+In Ubuntu, documentation for the contents of 'sos.py' can be created with `pydoc` using
 ```
 bash makedocs.sh
 ```
@@ -75,7 +74,7 @@ The package in `./sos` can be used for both imitation learning and SOS analysis 
 
 ## Running the Experiments
 
-In Linux, the experiments from the paper can be run end-to-end with the command
+In Ubuntu, the experiments from the paper can be run end-to-end with the command
 ```
 bash run.sh
 ```
